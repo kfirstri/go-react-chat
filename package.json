@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.9.0"
+    "react-scripts": "0.9.0",
+    "@kadira/storybook": "^2.21.0"
   },
   "dependencies": {
     "react": "^15.4.2",
@@ -11,8 +12,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "go build -o go-chat-server.exe go-react-chat-server.go && react-scripts build",
+    "build-go": "go build -o go-chat-server.exe go-react-chat-server.go",
+    "build": "npm run build-go && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   }
 }

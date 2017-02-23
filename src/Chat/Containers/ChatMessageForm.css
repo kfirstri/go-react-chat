@@ -1,0 +1,25 @@
+.new-message {
+  /*border: 1px solid black;*/
+  padding: 2px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.field {
+  height: 22px;
+  margin-right: 3px;
+  margin-left: 3px;
+  padding-left: 2px;
+}
+
+  .field.username {
+    width: 15%;
+  }
+
+  .field.message {
+    width: 70%;
+  }
+
+  .field.submit {
+    width: 10%;
+  }
